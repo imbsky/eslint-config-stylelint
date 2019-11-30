@@ -32,6 +32,7 @@
     "lint": "eslint -c eslintrc.js .",
     "release": "np",
     "test": "npm run lint && npm run jest",
+    "test:ci": "npm test && eslint -c eslintrc.js --no-eslintrc stylelint",
     "watch": "jest --watch"
   },
   "dependencies": {
